@@ -24,8 +24,10 @@ html, body {
   padding: 0px 10px 0px 10px;
 }
 
-.nav-items > li {
+.nav-items > li, a {
   padding: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .content {
