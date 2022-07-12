@@ -2,7 +2,7 @@ import React from "react"
 
 const MainContent = () => {
   return (
-    <div className="content">
+    <main>
       <h1 className="content-title">Fun facts about React</h1>
       <ul className="content-list">
         <li>Was first released in 2013</li>
@@ -11,7 +11,7 @@ const MainContent = () => {
         <li>Is maintained by Facebook</li>
         <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ul>
-    </div>
+    </main>
   )
 }
 
