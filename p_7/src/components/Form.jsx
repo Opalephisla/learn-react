@@ -1,10 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
+import memesData from "../memesData"
 
 const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log("Form submitted")
+    setMemeImage(
+      memesData.data.memes[
+        Math.floor(Math.random() * memesData.data.memes.length)
+      ]["url"],
+    )
   }
+  const [memeImage, setMemeImage] = useState("")
   return (
     <>
       <form className="form">
@@ -25,7 +31,9 @@ const Form = () => {
         <button onClick={handleSubmit} className="btn" type="submit">
           Get a new meme image 🖼
         </button>
+        <div className="meme-container"></div>
       </form>
+      <img className="meme-image" src={memeImage} alt="meme" />
     </>
   )
 }
