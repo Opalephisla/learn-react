@@ -1,12 +1,6 @@
 import Header from "./Header"
-
-const Content = () => (
-
-)
-
-const Footer = () => (
-
-)
+import Content from "./Content"
+import Footer from "./Footer"
 
 const Page = () => (
   <div>
